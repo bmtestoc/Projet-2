@@ -1,0 +1,143 @@
+body {
+    font-family: arial, sans-serif, serif;
+    font-size : 12px;
+    height: auto;
+    width: 900px;
+    margin:auto;
+}
+p {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+#conteneurGauche {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    float: left;
+}
+h1 {
+    width: 100%;
+    background-color: grey;
+    font-size: 1.4em;
+    color: #81D4FA;
+    text-align: center;
+}
+#photo {
+    background-color: #81D4FA;
+    text-align: center;
+    height: 180px;
+    padding-top: 35px;
+}
+#contact {
+    background-color: #81D4FA;
+    height: auto;
+}
+#aPropos {
+    background-color: #81D4FA;
+    height: 430px;
+}
+#loisirs {
+    background-color: #81D4FA;
+    height: 110px;
+}
+#loisirsLogos {
+    text-align: center;
+    padding-top: 10px;
+}
+.fa-car, .fa-globe-europe, .fa-music {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#conteneurDroit
+{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+#titre {
+    height: 150px;
+    padding-top: 70px;
+    padding-left: 50px;
+}
+#photo2 {
+    display: none;
+}
+#nom {
+    font-size: 4em;
+}
+#prenomCouleur {
+    color: #81D4FA;
+}
+#sousTitre {
+    font-size: 1.3em;
+}
+.hr1 {
+    color: #81D4FA;
+    width: 7%;
+    text-align: left; 
+    margin: 0;
+}
+h2 {
+    padding-left: 30px;
+    font-size: 1.4em;
+}
+#logoFormTitre, #logoExpProTitre, #logoRecomm {
+    float: left;
+    height: 30px;
+    width: 50px;
+    padding-left: 50px;
+    padding-top: 5px;
+}
+.fa-user-graduate, .fa-briefcase, .fa-pen-nib {
+    color: #81D4FA;
+    font-size: 1.4em;
+    padding-top: 10px;
+}
+.hr2 {
+    color: #81D4FA;
+    width: 87%;
+    text-align: left; 
+    margin-top: 10px;
+    margin-left: 50px;
+}
+#logoForm1, #logoForm2, #logoForm3, #logoForm4, #logoExpPro1, #logoExpPro2, #logoExpPro3 {
+    float: left;
+    height: 50px;
+    width: 20px;
+    padding-left: 50px;
+    padding-top: 20px;
+}    
+#anneesForm1, #anneesForm2, #anneesForm3, #anneesForm4, #anneesExpPro1, #anneesExpPro2, #anneesExpPro3 {
+    float: left;
+    height: 50px;
+    width: 150px;
+    padding-top: 20px;
+}
+#descriptionForm1, #descriptionForm2, #descriptionForm3, #descriptionForm4, #descriptionExpPro1, #descriptionExpPro2, #descriptionExpPro3 {
+    height: auto;
+    width: auto;
+    padding-top: 20px;
+}
+.fa-clock, .fa-check-circle {
+    color: black;
+    padding-right: 10px;
+}
+#enteteRecomm {
+    padding-top: 25px;
+}
+#entreprise1 {
+    height: auto;
+    width: 250px;
+    padding-top: 20px;
+    padding-left: 50px;
+    float: left;
+}
+#entreprise2 {
+    float: left;
+    height: auto;
+    width: 250px;
+    padding-top: 20px;
+}
