@@ -244,3 +244,103 @@ h2 {
         width: 70%;
     }
 }
+@media (min-width:450px) and (max-width:549px) and (orientation: portrait) {
+    body {
+        width: 100%;
+    }
+    #photo2 {
+        display: block;
+        text-align: center;
+    }
+    #photo {
+        display: none;
+    }
+    #titre {
+        height: auto;
+        padding-top: 5px;
+        padding-left: 0px;
+        text-align: center;
+    }
+    .hr1 {
+        display: none;
+    }
+    .hr2 {
+        margin-top: 5px;
+        margin-left: 30px; 
+    }
+    #titreForm, #titreExpPro, #titreRecomm {
+        width: 90%;
+    }
+    #logoFormTitre, #logoExpProTitre, #logoRecomm {
+        width: 10%;
+        padding-left: 30px;
+    }
+    #logoForm1, #logoForm2, #logoForm3, #logoForm4, #logoExpPro1, #logoExpPro2, #logoExpPro3 {
+        display: none;
+    }
+    #anneesForm1, #anneesForm2, #anneesForm3, #anneesForm4, #anneesExpPro1, #anneesExpPro2, #anneesExpPro3 {
+        height: 61px;
+        width: 25%;
+        padding-top: 10px;
+    }
+    #descriptionForm1, #descriptionForm2, #descriptionForm3, #descriptionForm4 {
+        width: 95%;
+        padding-top: 10px;
+    }
+    #descriptionExpPro1, #descriptionExpPro2, #descriptionExpPro3 {
+        padding-top: 10px;
+        height: auto;
+    }
+    h2 {
+        padding-left: 10px;
+        font-size: 1.3em;
+    }
+    .fa-user-graduate, .fa-briefcase, .fa-pen-nib {
+        font-size: 1.3em;
+        padding-top: 5px;
+    }
+    #conteneurDroit {
+        width: 100%;
+        position: relative;
+    }
+    #enteteRecomm {
+    padding-top: 0px;
+    }    
+    #entreprise1 {
+        width: 40%;
+        padding-top: 5px;
+        padding-left: 30px;
+    }
+    #entreprise2 {
+        width: 40%;
+        padding-top: 5px;
+    }
+    #contact {
+        position: absolute;
+        top: 890px;
+        width: 35%;
+        height: 320px;
+    }
+    #aPropos {
+        position: absolute;
+        top: 890px;
+        left: 144px;
+        height: 185px;
+        width: 70%;
+    }
+    #loisirs {
+        position: absolute;
+        top: 1075px;
+        left: 144px;
+        height: 135px;
+        width: 70%;
+    }
+    h1 {
+        margin-left: 5px;
+        font-size: 1.3em;
+        width: 98%;
+    }
+    #contact > h1 {
+        width: 70%;
+    }
+}
