@@ -302,6 +302,7 @@ h2 {
         height: 61px;
         width: 25%;
         padding-top: 10px;
+        padding-left: 5px;
     }
     #descriptionForm1, #descriptionForm2, #descriptionForm3, #descriptionForm4 {
         width: 95%;
