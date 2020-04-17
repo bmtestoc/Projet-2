@@ -263,7 +263,7 @@ h2 {
 
 /* ---------------------------------Site Mobile 2---------------------------------- */
 
-@media (min-width:450px) and (max-width:549px) and (orientation: portrait) {
+@media (max-width:549px) and (orientation: portrait) {
     body {
         width: 100%;
     }
