@@ -23,7 +23,7 @@ p {
     width: 30%;
     float: left;
 }
-h1 {
+h2 {
     width: 100%;
     background-color: grey;
     font-size: 1.4em;
@@ -42,25 +42,30 @@ h1 {
 }
 #aPropos {
     background-color: #81D4FA;
-    height: 430px;
+    height: 380px;
 }
 #loisirs {
     background-color: #81D4FA;
     height: 110px;
-}
-#loisirsLogos {
     text-align: center;
-    padding-top: 10px;
+    padding-bottom:20px;
 }
-.fa-car, .fa-globe-europe, .fa-music {
-    padding-left: 10px;
-    padding-right: 10px;
+.circle-icon {
+    background: #81D4FA;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    vertical-align: middle;
+    padding: 13px;
+    border:1px solid grey;
+    margin-right: 15px;
 }
 
 /* -----------------Partie droite du site----------------- */
 
-#conteneurDroit
-{
+#conteneurDroit {
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -79,10 +84,10 @@ h1 {
 #nom {
     font-size: 4em;
 }
-#prenomCouleur {
+.policeCouleur {
     color: #81D4FA;
 }
-#sousTitre {
+.sousTitre {
     font-size: 1.3em;
 }
 .hr1 {
@@ -91,68 +96,73 @@ h1 {
     text-align: left; 
     margin: 0; /*alignement gauche pour Firefox*/
 }
-h2 {
-    padding-left: 30px;
-    font-size: 1.4em;
+.section-title {
+    margin-left:30px;
 }
-#logoFormTitre, #logoExpProTitre, #logoRecomm {
-    float: left;
-    height: 30px;
-    width: 50px;
-    padding-left: 50px;
-    padding-top: 5px;
+
+.section-title + hr {
+    margin-left:30px;
 }
-.fa-user-graduate, .fa-briefcase, .fa-pen-nib {
+.section-title::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    margin-right:15px; 
+    color:#81D4FA;
+    font-size: 1.5em;
+}
+.formation::before {
+    content: "\f501";
+}
+.jobs::before {
+    content: "\f0b1";
+}
+.recommandations::before {
+    content: "\f5ad";
+}
+.hr-color {
     color: #81D4FA;
-    font-size: 1.4em;
-    padding-top: 10px;
+    border:1px solid;
 }
-.hr2 {
-    color: #81D4FA;
-    width: 87%;
-    text-align: left; 
-    margin-top: 10px;
-    margin-left: 50px; /*alignement gauche pour Firefox*/
+.contenu {
+    display: inline;
+    width: 100%;
 }
-#logoForm1, #logoForm2, #logoForm3, #logoForm4, #logoExpPro1, #logoExpPro2, #logoExpPro3 {
+.logo {
+    width: 10%;
     float: left;
-    height: 50px;
-    width: 20px;
     padding-left: 50px;
-    padding-top: 20px;
-}    
-#anneesForm1, #anneesForm2, #anneesForm3, #anneesForm4, #anneesExpPro1, #anneesExpPro2, #anneesExpPro3 {
-    float: left;
-    height: 50px;
-    width: 150px;
-    padding-top: 20px;
-}
-#descriptionForm1, #descriptionForm2, #descriptionForm3, #descriptionForm4, #descriptionExpPro1, #descriptionExpPro2, #descriptionExpPro3 {
     height: auto;
-    width: auto;
-    padding-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.annees {
+    width: 20%;
+    float: left;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.description {
+    width: 60%;
+    float: left;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 .fa-clock, .fa-check-circle {
     color: black;
     padding-right: 10px;
 }
-#enteteRecomm {
-    padding-top: 25px;
-}
-#entreprise1 {
-    height: auto;
-    width: 250px;
-    padding-top: 20px;
-    padding-left: 50px;
-    float: left;
-}
-#entreprise2 {
+.entreprises {
     float: left;
     height: auto;
     width: 250px;
     padding-top: 20px;
 }
-#footerMobile {
+.entreAlign {
+    padding-left: 50px; 
+}
+#headerMobile {
     display: none;
 }
 
@@ -179,90 +189,72 @@ h2 {
     .hr1 {
         display: none;
     }
-    .hr2 {
-        margin-top: 5px;
-        margin-left: 30px; /*alignement gauche pour Firefox*/
-    }
-    #titreForm, #titreExpPro, #titreRecomm {
-        width: 90%;
-    }
-    #logoFormTitre, #logoExpProTitre, #logoRecomm {
-        width: 10%;
-        padding-left: 30px;
-    }
-    #logoForm1, #logoForm2, #logoForm3, #logoForm4, #logoExpPro1, #logoExpPro2, #logoExpPro3 {
-        height: 40px;
+    .logo {
         width: 5%;
         padding-left: 30px;
-        padding-top: 10px;
     }
-    #anneesForm1, #anneesForm2, #anneesForm3, #anneesForm4, #anneesExpPro1, #anneesExpPro2, #anneesExpPro3 {
-        height: 61px;
+    .annees {
         width: 25%;
-        padding-top: 10px;
     }
-    #descriptionForm1, #descriptionForm2, #descriptionForm3, #descriptionForm4 {
-        width: 95%;
-        padding-top: 10px;
-    }
-    #descriptionExpPro1, #descriptionExpPro2, #descriptionExpPro3 {
-        padding-top: 10px;
-        height: auto;
-    }
-    h2 {
-        padding-left: 10px;
-        font-size: 1.3em;
-    }
-    .fa-user-graduate, .fa-briefcase, .fa-pen-nib {
-        font-size: 1.3em;
-        padding-top: 5px;
-    }
-    #enteteRecomm {
-    padding-top: 0px;
-    }    
-    #entreprise1 {
+    .entreprises {
         width: 40%;
         padding-top: 5px;
+    }
+    .entreAlign {
         padding-left: 30px;
     }
-    #entreprise2 {
-        width: 40%;
-        padding-top: 5px;
-    }
-    h1 {
-        margin-left: 5px;
+    h2 {
         font-size: 1.3em;
-        width: 98%;
     }
     #conteneurDroit {
         width: 100%;
     }
-    #footerMobile {
+    #headerMobile {
         display: inline-block;
         width: 100%;
         background-color: #81D4FA;
-        margin-top: 5px;
     }
     #contactMobile {
         background-color: #81D4FA;
-        height: 300px;
-        width: auto;
+        height: auto;
+        width: 100%;
         float: left;
-    }
-    #contactMobile > h1 {
-        width: 93%; /* Espace entre les titres Contact et A propos de moi */
+        column-count: 2;
+        -webkit-column-count:2;
+        -moz-column-count: 2;
     }
     #contactMobile > p {
         margin-bottom: 0.3em;
         margin-top: 0.3em;
+        display: inline;
+    }
+    #contactMobile > h2 {
+        -webkit-column-span: all;
+        -moz-column-span: all;
+        column-span: all;
     }
     #aProposMobile {
         background-color: #81D4FA;
         height: auto;
-        width: auto;
+        width: 100%;
+        float: left;
+    }
+    #loisirsMobile {
+        height: auto;
+        width: 100%;
+        background-color: #81D4FA;
+        float: left;
+        text-align: center;
+        padding-bottom:10px;
     }
     #contact, #aPropos, #loisirs {
         display: none;
+    }
+    .circle-icon {
+        width: 25px;
+        height: 25px;
+        padding: 7px;
+        margin-right: 5px;
     }
 }
 
@@ -289,94 +281,66 @@ h2 {
     .hr1 {
         display: none;
     }
-    .hr2 {
-        margin-top: 5px;
-        margin-left: 30px; /*alignement gauche pour Firefox*/
-    }
-    #titreForm, #titreExpPro, #titreRecomm {
-        width: 90%;
-    }
-    #logoFormTitre, #logoExpProTitre, #logoRecomm {
-        width: 10%;
-        padding-left: 30px;
-    }
-    #logoForm1, #logoForm2, #logoForm3, #logoForm4, #logoExpPro1, #logoExpPro2, #logoExpPro3 {
-        display: none;
-    }
-    #anneesForm1, #anneesForm2, #anneesForm3, #anneesForm4 {
-        height: 61px;
-        width: 25%;
-        padding-top: 10px;
-        margin-left: 3px;
-    }
-    #descriptionForm1, #descriptionForm2, #descriptionForm3, #descriptionForm4 {
-        width: 95%;
-        padding-top: 10px;
-    }
-    #anneesExpPro1, #anneesExpPro2, #anneesExpPro3 {
-        height: 80px;
+    .annees {
         width: 30%;
-        padding-top: 10px;
-        margin-left: 3px;
-        margin-right: 6px;
-    }
-    #descriptionExpPro1, #descriptionExpPro2, #descriptionExpPro3 {
-        padding-top: 10px;
+        float: left;
         height: auto;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        margin-left: 3px;
+    }
+    .description {
+        width: 65%;
+        float: left;
+        height: auto;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        margin-left: 3px;
+    }
+    .entreprises {
+        width: 40%;
+        padding-top: 5px;
+    }
+    .entreAlign {
+        padding-left: 3px;
     }
     h2 {
-        padding-left: 10px;
         font-size: 1.3em;
-    }
-    .fa-user-graduate, .fa-briefcase, .fa-pen-nib {
-        font-size: 1.3em;
-        padding-top: 5px;
-    }
-    #enteteRecomm {
-    padding-top: 0px;
-    }    
-    #entreprise1 {
-        width: 40%;
-        padding-top: 5px;
-        padding-left: 30px;
-    }
-    #entreprise2 {
-        width: 40%;
-        padding-top: 5px;
-    }
-    h1 {
-        margin-left: 5px;
-        font-size: 1.3em;
-        width: 98%;
     }
     #conteneurDroit {
         width: 100%;
     }
-    #footerMobile {
+    #headerMobile {
         display: inline-block;
         width: 100%;
         background-color: #81D4FA;
-        margin-top: 5px;
     }
     #contactMobile {
         background-color: #81D4FA;
-        height: 300px;
-        width: auto;
+        height: auto;
+        width: 100%;
         float: left;
-    }
-    #contactMobile > h1 {
-        width: 93%; /* Espace entre les titres Contact et A propos de moi */
+        column-count: 2;
+        -webkit-column-count:2;
+        -moz-column-count: 2;
     }
     #contactMobile > p {
         margin-bottom: 0.3em;
         margin-top: 0.3em;
+        display: inline;
+    }
+    #contactMobile > h2 {
+        -webkit-column-span: all;
+        -moz-column-span: all;
+        column-span: all;
     }
     #aProposMobile {
         background-color: #81D4FA;
         height: auto;
-        width: auto;
+        width: 100%;
+        float: left;
     }
-    #contact, #aPropos, #loisirs {
+    #contact, #aPropos, #loisirs, #loisirsMobile, .logo {
         display: none;
     }
 }
